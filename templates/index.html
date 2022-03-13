@@ -1,26 +1,6 @@
 {% extends "base.html" %}
 
 {% block content%} 
-
-        <h1>Rock -- Paper -- Scissor</h1>
-
-        <form action="/players" method="post">
-          <label for="name">Name</label>
-          <input type="text" name="name" id="name">
-          <label for="choice">Player -- Choice</label>
-          <input type="text" name="choice" id="choice">
-          <input type="submit" value="Let's Play">
-        </form>
-
-        <!-- {% for task in tasks %}   -->
-        <!-- <div>
-          <p>
-            {{ task.title }}: <b>{{ task.description }}</b>
-            {% if task.done %}
-              <span> &#9989; </span>
-            {% endif %}
-          </p>
-        </div>
-        {% endfor %} -->
-
+<h1>Welcome to: Rock -- Paper -- Scissors!!!</h1>
+<h2>To play enter your choices in to the url! ex.: "http://127.0.0.1:5000/rock/paper"</h2>
 {% endblock%}

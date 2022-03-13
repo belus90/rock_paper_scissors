@@ -1,0 +1,61 @@
+{% extends "base.html" %}
+
+{% block content%} 
+
+        <h1>Rock -- Paper -- Scissor</h1>
+        <section class="player-1">
+          <h2>Player_2</h2>
+          <form action="/players" method="post">
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name"> <br>
+            <p>Select your choice:</p>
+            <div>
+              <input type="radio" value="rock" checked name="choice">
+              <label for="rock">Rock</label>
+            </div>
+            <div>
+              <input type="radio" value="paper" name="choice">
+              <label for="paper">Paper</label>
+            </div>
+            <div>
+              <input type="radio" value="scissor" name="choice">
+              <label for="scissor">Scissor</label>
+            </div> <br>
+          </form>
+        </section>
+        
+        <section class="player-2">
+          <h2>Player_2</h2>
+          <form action="/players" method="post">
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name"> <br>
+            <p>Select your choice:</p>
+            <div>
+              <input type="radio" value="rock" checked name="choice">
+              <label for="rock">Rock</label>
+            </div>
+            <div>
+              <input type="radio" value="paper" name="choice">
+              <label for="paper">Paper</label>
+            </div>
+            <div>
+              <input type="radio" value="scissor" name="choice">
+              <label for="scissor">Scissor</label>
+            </div> <br>
+            <input type="submit" value="Let's Play">
+          </form>
+        </section>
+        <!-- {% for task in tasks %}   -->
+        <!-- <div>
+          <p>
+            {{ task.title }}: <b>{{ task.description }}</b>
+            {% if task.done %}
+              <span> &#9989; </span>
+            {% endif %}
+          </p>
+        </div>
+        {% endfor %} -->
+
+{% endblock%}
+
+
