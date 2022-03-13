@@ -4,7 +4,7 @@ class Game():
         if player1.choice == player2.choice:
             return None
         elif player1.choice == "rock":
-            if player2.choice == "scissor":
+            if player2.choice == "scissors":
                 return player1
             else:
                 return player2
@@ -13,7 +13,7 @@ class Game():
                 return player1
             else:
                 return player2
-        elif player1.choice =="scissor":
+        elif player1.choice =="scissors":
             if player2.choice=="paper":
                 return player1
             else:
