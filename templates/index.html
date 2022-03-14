@@ -1,6 +1,9 @@
 {% extends "base.html" %}
 
 {% block content%} 
+<link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">
+<div class="index">
 <h1>Welcome to: Rock -- Paper -- Scissors!!!</h1>
 <h2>To play enter your choices in to the url! ex.: "http://127.0.0.1:5000/rock/paper"</h2>
+</div>
 {% endblock%}

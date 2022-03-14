@@ -1,5 +1,7 @@
+
 {% extends "base.html" %}
 
 {% block content%} 
-<h1>It's a tie!! </h1>
+<link rel="stylesheet" href="{{ url_for('static', filename='tie.css') }}">
+<h1 class="h1">It's a tie!! </h1>
 {% endblock%}
